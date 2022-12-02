@@ -8,6 +8,9 @@
     .cookwith img{
         width: 50%;
     }
+    .unitygame img{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 472px) {
     .adsense1{
@@ -16,7 +19,7 @@
     .adsense2{
         position: absolute;
     }
-    .cookwith img{
+    .unitygame img{
         width: 100%;
     }
 }
