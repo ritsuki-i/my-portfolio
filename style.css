@@ -64,8 +64,58 @@ body .header{
     padding-left: 50px;
     padding-right: 100px;
 }
+.about-table{
+    border-collapse:  collapse;  
+}
+.about-table-title{
+    border-bottom: solid 1px;
+}
+.about-table td{
+    font-size: 20px;
+}
+.about-table-title-year{
+    width: 15vw;
+    padding-left: 5vw;
+    font-weight: bold;
+}
+.about-table-year{
+    width: 15vw;
+    padding-left: 5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.about-table-contents{
+    width: 65vw;
+    padding-left: 5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.about-table-line{
+    transition: background-color .4s;
+}
+.about-table-line:hover {
+    background-color: rgba(0, 0, 0, 0.149);
+}
 /* applicationpage */
 /* contactpage */
+.field{
+    margin-bottom: 20px;
+}
+.label-submit{
+    font-size: 20px;
+}
+input,textarea{
+    font-size: 20px;
+    padding-left: 20px;
+    padding: calc(0.375em - 1px) calc(0.625em - 1px);
+    width: 50vw;
+}
+textarea{
+    width: 50vw;
+}
+button{
+    font-size: 20px;
+}
 
 
 /* レスポンシブ対応 */
