@@ -11,6 +11,17 @@ body .header{
     font-size: 30px;
     padding: 20px 40px;
 }
+.header-menu a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.338);
+    transition: color .4s;
+}
+.root{
+    color: rgb(0, 0, 0);
+}
+.header-menu a:hover{
+    color: rgb(0, 0, 0);
+}
 .header-menu li{
     float: left;
     padding: 33px 20px;
@@ -18,6 +29,8 @@ body .header{
 }
 .main{
     height: 100vh;
+    margin-top: 70px;
+    margin-left: 5em;
 }
 .footer{
     height: 90px;
@@ -37,25 +50,51 @@ body .header{
 }
 /* homepage*/
 /* aboutpage */
+.myicon{
+    height: 250px;
+}
+.name{
+    justify-content: center;
+}
+.name img{
+    padding-right: 50px;
+}
+.name p{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
 /* applicationpage */
 /* contactpage */
 
 
 /* レスポンシブ対応 */
-@media screen and (min-width: 472px) {
-    .cookwith img{
-        width: 50%;
+@media screen and (min-width: 800px) {
+    .title{
+        padding-left: 0.3em; border-left: 0.3em solid rgb(0, 0, 0);
     }
-    .unitygame img{
-        width: 50%;
+    .name{
+        display: flex;
     }
 }
+@media screen and (min-width: 472px) and (max-width: 800px){
+    .name{
+        display: flex;
+    }
+    .header-menu{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 472px) {
     .cookwith img{
         width: 100%;
     }
     .unitygame img{
         width: 100%;
+    }
+    .header-menu{
+        display: none;
     }
 }
 
