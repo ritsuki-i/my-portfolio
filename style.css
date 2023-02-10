@@ -7,6 +7,7 @@ body .header{
     height: 90px;
 }
 .header-logo{
+    color: black;
     float: left;
     font-size: 30px;
     padding: 20px 40px;
