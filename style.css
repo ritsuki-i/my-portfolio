@@ -16,6 +16,9 @@ body .header{
     padding: 33px 20px;
     list-style: none;
 }
+.main{
+    height: 100vh;
+}
 .footer{
     height: 90px;
 }
@@ -26,12 +29,17 @@ body .header{
     display: none;
 }
 .sitelink p{
-    margin-right: 100px;
+    margin-right: 20px;
 }
 .footer p{
     float: left;
     padding: 20px 40px;
 }
+/* homepage*/
+/* aboutpage */
+/* applicationpage */
+/* contactpage */
+
 
 /* レスポンシブ対応 */
 @media screen and (min-width: 472px) {
