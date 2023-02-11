@@ -23,31 +23,53 @@
     <div class="main">
         <div class="application">
             <h1 class="title">Application</h1>
-            <div class="cookwith">
-                <h2>①COOK_WITH</h2>
-                <p>・・・欲しい栄養素からレシピを検索できるwebアプリケーション</p>
-                <p><a href="https://cw.pythonanywhere.com/">https://cw.pythonanywhere.com/</a></p>
-                <a href="https://cw.pythonanywhere.com/"><img src="cookwith.jpg"></a>
+            <div class="row g-4 mt-3">
+                <div class="col-sm-4">
+                  <a href="https://cw.pythonanywhere.com/">
+                  <div class="app-card">
+                    <div class="my-4">
+                      <img src="img/cookwith-icon.png" alt="" />
+                      <h5>COOK_WITH</h5>
+                      <p>欲しい栄養素からレシピを検索できるwebアプリケーション</p>
+                    </div>
+                    <button class="play-btn">Play</button>
+                  </div>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="https://oji.pythonanywhere.com/">
+                  <div class="app-card">
+                    <div class="my-4">
+                      <img src="img/ojitrans-icon.png" alt="" />
+                      <h5>おじさん構文翻訳AI</h5>
+                      <p>AIを用いて「標準語⇄おじさん構文」の翻訳をすることができるwebアプリケーション</p>
+                    </div>
+                    <button class="play-btn">Play</button>
+                  </div>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="https://ritsuki-i.github.io/unitygame/">
+                  <div class="app-card">
+                    <div class="my-4">
+                      <img src="img/unitygame-icon.png" alt="" />
+                      <h5>Unity WEB Game -プログラミングをしてみよう-</h5>
+                      <p>「プログラミング」を超簡単に体験できるwebゲーム</p>
+                    </div>
+                    <button class="play-btn">Play</button>
+                  </div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="unitygame">
-                <h2>②Unity WEB Game -プログラミングをしてみよう-</h2>
-                <p>・・・「プログラミング」を超簡単に体験できるwebゲーム</p>
-                <p><a href="https://ritsuki-i.github.io/unitygame/">https://ritsuki-i.github.io/unitygame/</a></p>
-                <a href="https://ritsuki-i.github.io/unitygame/"><img src="unitygame.jpg"></a>
-            </div>
-            <div class="ojitrans">
-                <h2>③おじさん構文翻訳AI</h2>
-                <p>・・・AIを用いて「標準語⇄おじさん構文」の翻訳をすることができるwebアプリケーション</p>
-                <p><a href="https://oji.pythonanywhere.com/">https://oji.pythonanywhere.com/</a></p>
-                <a href="https://oji.pythonanywhere.com/"><img src="unitygameicon.png"></a>
-            </div>
+          </div>
         </div>
     </div>
     
     <div class="footer">
         <p>&copy; 2023 Ritsuki Ishikawa</p>
         <div class="sitelink">
-            <p><input type="checkbox" id="sitelink">サイトのQRコードを表示</p>
+            <p><input type="checkbox" id="sitelink" class="sitelink-checkbox">サイトのQRコードを表示</p>
             <div class="qr">
                 <img src="img/QR.png" alt="ポートフォリオのQR">
             </div>

@@ -29,11 +29,12 @@ body .header{
     list-style: none;
 }
 .main{
-    height: 100vh;
+    height: auto;
     margin-top: 70px;
     margin-left: 5em;
 }
 .footer{
+    margin-top: 15vh;
     height: 90px;
 }
 .sitelink {
@@ -98,29 +99,87 @@ body .header{
     background-color: rgba(0, 0, 0, 0.149);
 }
 /* applicationpage */
+.col-sm-4 a{
+    color: black;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+.app-card {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  }
+  
+.app-card {
+    margin-top: 10vh;
+    width: 20vw;
+    height: 30vw;
+    background-color: rgba(255, 255, 255, 0.204);
+    border-radius: 8%;
+    transition: transform .4s;
+  }
+  
+.app-card h5 {
+    height: 60px;
+    font-size: 30px;
+  }
+  
+.app-card p {
+    margin-top: 20px;
+    height: 60;
+    font-size: 20px;
+  }
+  
+.app-card:hover {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+.app-card img{
+    height: 200px;
+  }
+.my-4{
+    padding: 10px;
+}
 /* contactpage */
 .field{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .label-submit{
     font-size: 20px;
 }
-input,textarea{
+.input,.textarea{
     font-size: 20px;
     padding-left: 20px;
     padding: calc(0.375em - 1px) calc(0.625em - 1px);
     width: 50vw;
 }
-textarea{
+.textarea{
     width: 50vw;
+    height: 20vh;
 }
 button{
+    font-family: "コーポレート明朝 ver2" ;
+    border-radius: 10%;
     font-size: 20px;
+    margin-top: 50px;
     margin-right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: color .4s;
+    transition: background-color .4s;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 
 /* レスポンシブ対応 */
+
 @media screen and (min-width: 800px) {
     .title{
         padding-left: 0.3em; border-left: 0.3em solid rgb(0, 0, 0);
