@@ -23,31 +23,33 @@
     <div class="main">
         <div class="contact">
             <h1 class="title">Contact</h1>
-            <form name="contact" data-netlify="true" method="POST">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="8a33a80c-6e03-421d-ac8b-44ae016c3e21"><!-- Required -->
                 <div class="field">
                     <label class="label-submit">お名前</label>
                     <div class="control">
-                        <input class="input" type="text" name="name" id="name">
+                        <input class="input" type="text" name="name" required/>
                     </div>
                 </div>
                 <div class="field">
                     <label class="label-submit">メールアドレス</label>
                     <div class="control">
-                        <input class="input" type="email" name="email" id="email">
+                        <input class="input" type="text" name="email" required/>
                     </div>
                 </div>
                 <div class="field">
                     <label class="label-submit">内容</label>
                     <div class="control">
-                        <textarea class="textarea" name="message" id="message"></textarea>
+                        <textarea class="textarea" name="message" required></textarea>
                     </div>
                 </div>
                 <div class="field">
                     <div class="control">
-                        <button class="button-submit" type="submit" onclick="submit()">送信</button>
+                        <input type="submit" class="submit" value="送信する" />
                         <button class="button-reset" type="button" onclick="reset()">リセット</button>
                     </div>
                 </div>
+                <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
             </form>
         </div>
     </div>
