@@ -51,6 +51,13 @@ body .header{
     padding: 20px 40px;
 }
 /* homepage*/
+.footer-index {
+    height: 80px;
+}
+.footer-index p {
+    float: left;
+    padding: 20px 40px;
+}
 /* aboutpage */
 .myicon{
     height: 250px;
@@ -130,7 +137,7 @@ body .header{
   
 .app-card p {
     margin-top: 20px;
-    height: 60;
+    height: 60px;
     font-size: 20px;
   }
   
