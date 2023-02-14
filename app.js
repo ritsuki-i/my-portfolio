@@ -27,14 +27,17 @@ $(function() {
 
     // POSTで送信
     $.post(
-      "submit.php",
+      "https://api.staticforms.xyz/submit",
       postData,
     );
 
     // 送信完了後の処理（送信完了のメッセージ表示）
-    //alert("送信完了しました。お問い合わせありがとうございます。")
-    $('#name').val("");
-    $('#email').val("");
-    $('#message').val("");
+    alert("送信完了しました。お問い合わせありがとうございます。")
+    $('.input').val("");
+    $('.textarea').val("");
   });
+});
+
+$('.nav_toggle').on('click', function () {
+  $('.nav_toggle, .nav').toggleClass('show');
 });

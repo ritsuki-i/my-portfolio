@@ -12,6 +12,75 @@ body .header{
     font-size: 30px;
     padding: 20px 40px;
 }
+/* ハンバーガーメニュー */
+.nav_toggle {
+    float: right;
+    margin: 30px 20px;
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+}
+.nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+.nav_toggle i:nth-child(1) {
+    top: 0;
+}
+.nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+.nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+
+.nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+.nav {
+    background-color: rgba(0, 0, 0, 0.234);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+.nav_menu_ul a{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: transform .4s;
+}
+.nav_menu_li{
+    list-style: none;
+    margin-top: 20px;
+}
+ .nav_menu_ul a:hover{
+    color: rgb(121, 113, 96);
+ }
+
+
 .header-menu a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.338);
@@ -50,6 +119,8 @@ body .header{
     float: left;
     padding: 20px 40px;
 }
+
+
 /* homepage*/
 .footer-index {
     height: 80px;
@@ -105,6 +176,8 @@ body .header{
 .about-table-line:hover {
     background-color: rgba(0, 0, 0, 0.149);
 }
+
+
 /* applicationpage */
 .col-sm-4 a{
     color: black;
@@ -151,6 +224,8 @@ body .header{
 .my-4{
     padding: 10px;
 }
+
+
 /* contactpage */
 .field{
     margin-bottom: 30px;
@@ -209,6 +284,9 @@ button:hover{
     .name{
         display: flex;
     }
+    .hamburger-menu{
+        display: none;
+    }
 }
 @media screen and (min-width: 472px) and (max-width: 800px){
     .name{
@@ -220,14 +298,29 @@ button:hover{
 }
 
 @media screen and (max-width: 472px) {
-    .cookwith img{
-        width: 100%;
-    }
-    .unitygame img{
-        width: 100%;
-    }
     .header-menu{
         display: none;
     }
+    .header-logo{
+        padding: 20px 30px;
+    }
+    .body .header {
+        height: 40px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-logo {
+        font-size: 25px;
+    }
+
+    .body .header {
+        height: 40px;
+    }
+
 }
 
