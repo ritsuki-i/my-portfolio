@@ -206,12 +206,12 @@ body .header{
     width: 25vw;
     height: 60vh;
     background-color: rgba(255, 255, 255, 0.204);
-    border-radius: 2.5em;
+    border-radius: 1.5em;
     transition: transform .4s;
   }
 
 .app-card img{
-    border-radius: 10%;
+    border-radius: 1.5em;
 }
   
 .app-card h5 {
