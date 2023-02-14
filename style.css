@@ -102,6 +102,10 @@ body .header{
     margin-top: 70px;
     margin-left: 5em;
 }
+.title {
+    padding-left: 0.3em;
+    border-left: 0.3em solid rgb(0, 0, 0);
+}
 .footer{
     margin-top: 15vh;
     height: 90px;
@@ -146,7 +150,8 @@ body .header{
     padding-right: 100px;
 }
 .about-table{
-    border-collapse:  collapse;  
+    border-collapse:  collapse; 
+    table-layout: fixed;
 }
 .about-table-title{
     border-bottom: solid 1px;
@@ -177,6 +182,7 @@ body .header{
 .about-table-line:hover {
     background-color: rgba(0, 0, 0, 0.149);
 }
+
 
 
 /* applicationpage */
@@ -278,10 +284,7 @@ button:hover{
 
 /* レスポンシブ対応 */
 
-@media screen and (min-width: 920px) {
-    .title{
-        padding-left: 0.3em; border-left: 0.3em solid rgb(0, 0, 0);
-    }
+@media screen and (min-width: 960px) {
     .name{
         display: flex;
     }
@@ -342,10 +345,40 @@ button:hover{
     .play-btn {
         margin-top: 10vw;
     }
+    .about-table .about-table-year {
+        font-size: 15px;
+    }
+    
+    .about-table .about-table-contents {
+        font-size: 20px;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+    }
+    .name div{
+        align-items: center;
+    }
+    .name img {
+        padding-right: 1vw;
+    }
+    .myicon {
+        margin-top: 25px;
+        height: 22vw;
+    }
+    
+    .name p {
+        font-size: 4vw;
+        padding-left: 1vw;
+        padding-right: 0px;
+    }
         
 }
 
 @media screen and (max-width: 520px) {
+    .title{
+        font-size: 20px;
+    }
     .header-menu {
         display: none;
     }
@@ -379,7 +412,7 @@ button:hover{
     
     .app-card p {
         height: 10px;
-        margin-top: 0px;
+        margin-top: 5vw;
         font-size: 10px;
     }
     
@@ -392,7 +425,25 @@ button:hover{
     }
     
     .play-btn {
-        margin-top: 10vw;
+        margin-top: 5vw;
+    }
+    .about-table .about-table-year{
+        font-size: 10px;
+    }
+    .about-table .about-table-contents {
+        font-size: 15px;
+    }
+    .name p{
+        font-size: 5vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .name{
+        text-align: center;
+    }
+    .name img{
+        height: 50vw;
+        padding-right: 0;
     }
 
 }
