@@ -197,15 +197,18 @@ body .header{
   
 .app-card {
     margin-top: 10vh;
-    width: 20vw;
+    width: 25vw;
     height: 60vh;
     background-color: rgba(255, 255, 255, 0.204);
-    border-radius: 10%;
+    border-radius: 2.5em;
     transition: transform .4s;
   }
+
+.app-card img{
+    border-radius: 10%;
+}
   
 .app-card h5 {
-    height: 60px;
     font-size: 3vh;
   }
   
@@ -275,7 +278,7 @@ button:hover{
 
 /* レスポンシブ対応 */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 920px) {
     .title{
         padding-left: 0.3em; border-left: 0.3em solid rgb(0, 0, 0);
     }
@@ -285,75 +288,111 @@ button:hover{
     .hamburger-menu{
         display: none;
     }
-}
-@media screen and (min-width: 472px) and (max-width: 800px){
-    .name{
-        display: flex;
-    }
-    .header-menu{
-        display: none;
-    }
     .app-card img {
-        height: 15vh;
+        height: 20vh;
     }
+    
 }
-
-@media screen and (max-width: 472px) {
-    .title {
-        padding-left: 0.3em;
-        border-left: 0.3em solid rgb(0, 0, 0);
-    }
-    .header-menu{
-        display: none;
-    }
-    .header-logo{
-        padding: 20px 30px;
-    }
-    .body .header {
-        height: 40px;
-    }
-
-}
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 520px) and (max-width: 960px){
     .header-menu {
         display: none;
     }
+    
     .header-logo {
         font-size: 25px;
     }
-
+    
     .body .header {
         height: 40px;
     }
+    
     .app-card {
         margin-top: 5vh;
         width: 90vw;
-        height: 20vh;
+        height: 40vw;
         margin-left: 0vw;
         margin-left: 0vw;
     }
+    
     .app-card img {
-        width: 40vw;
+        width: 30vw;
         float: left;
     }
+    
     .app-card h5 {
         font-size: 5vw;
         margin-top: 10px;
         margin-bottom: 0px;
     }
+    
+    .app-card p {
+        height: 10px;
+        margin-top: 0px;
+        font-size: 3vw;
+    }
+    
+    .row {
+        display: block;
+    }
+    
+    .main {
+        margin-left: 1rem;
+    }
+    
+    .play-btn {
+        margin-top: 10vw;
+    }
+        
+}
+
+@media screen and (max-width: 520px) {
+    .header-menu {
+        display: none;
+    }
+    
+    .header-logo {
+        font-size: 25px;
+    }
+    
+    .body .header {
+        height: 40px;
+    }
+    
+    .app-card {
+        margin-top: 5vh;
+        width: 90vw;
+        height: 40vw;
+        margin-left: 0vw;
+        margin-left: 0vw;
+    }
+    
+    .app-card img {
+        width: 35vw;
+        float: left;
+    }
+    
+    .app-card h5 {
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
     .app-card p {
         height: 10px;
         margin-top: 0px;
         font-size: 10px;
     }
-    .row{
+    
+    .row {
         display: block;
     }
-    .main{
+    
+    .main {
         margin-left: 1rem;
     }
-    .play-btn{
-        margin-top: 20px;
+    
+    .play-btn {
+        margin-top: 10vw;
     }
-}
 
+}
