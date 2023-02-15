@@ -1,19 +1,15 @@
-let scene, camera, renderer, cube;
-
+let scene, camera,cube;
+const width = window.innerWidth;
+const height = window.innerHeight-200;
 
 function init() {
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(
         100,
-        window.innerWidth / window.innerHeight,
+        width / height,
         0.1,
         1000
     );
-
-    renderer = new THREE.WebGLRenderer({ alpha: true , antialias: true});
-    renderer.setClearColor(0x000000, 0);
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
 
     document.body.appendChild(renderer.domElement);
 
@@ -119,12 +115,26 @@ function init() {
     scene.add(cube6);
     scene.add(cube7);
     scene.add(cube8);
-
-    
-
-    camera.position.z = 10; /* カメラの位置を手前に変更 */
+     /* カメラの位置を手前に変更 */
+    camera.position.set(0, 0, +10);
 }
 
+const canvasElement = document.querySelector('#canvas') //HTMLのcanvasのid
+const renderer = new THREE.WebGLRenderer({
+    canvas: canvasElement,
+    alpha: true, //追加 背景を透明にする
+    antialias: true, //追加 アンチエイリアス
+});
+
+let mouseX = 0 // マウス座標
+const radian = rot * Math.PI / 180;
+let rot = 0; // 角度
+
+document.addEventListener("mousemove", (event) => {
+    mouseX = event.pageX;
+});
+let windowHalfX = window.innerWidth / 2;
+let windowHalfY = 200;
 /* アニメーション制御 */
 function animate() {
     requestAnimationFrame(animate);
@@ -161,14 +171,30 @@ function animate() {
     cube8.rotation.y -= 0.001;
     cube8.rotation.z -= 0.001;
 
+    const targetRot = (mouseX / window.innerWidth) * 360;
+    rot += (targetRot - rot) * 0.02;
+    const radian = rot * Math.PI / 180;
+    camera.position.x = 10 * Math.sin(radian);
+    camera.position.z = 10 * Math.cos(radian);
+
+    camera.lookAt(new THREE.Vector3(0, 0, 0));
+
     renderer.render(scene, camera);
 }
 
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = width / height;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(width, height);
 }
+
+
+
+function onDocumentMouseMove(event) {
+    mouseX = (event.clientX - windowHalfX);
+    mouseY = (event.clientY - windowHalfY);
+}
+document.addEventListener('mousemove', onDocumentMouseMove);
 
 window.addEventListener("resize", onWindowResize)
 
