@@ -28,7 +28,7 @@ const init = () => {
   //const camera = new THREE.OrthographicCamera(-480, +480, 270, -270, 1, 2000);
   camera.position.set(0, 0, +1000);
 
-  // 球体を作成
+  // 立方体を作成
   const geometry1 = new THREE.BoxGeometry(150, 150, 150);
   const geometry2 = new THREE.BoxGeometry(100, 100, 100);
   const geometry3 = new THREE.BoxGeometry(60, 60, 60);
