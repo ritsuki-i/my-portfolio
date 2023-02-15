@@ -61,7 +61,6 @@ body .header{
     padding: 1rem;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s, visibility .5s;
 }
 .nav.show {
     opacity: 1;
@@ -430,6 +429,7 @@ button:hover{
     
     .play-btn {
         margin-top: 5vw;
+        height: auto;
     }
     .about-table .about-table-year{
         font-size: 10px;
@@ -448,6 +448,15 @@ button:hover{
     .name img{
         height: 50vw;
         padding-right: 0;
+    }
+    .sitelink{
+        float: left;
+    }
+    .footer-index p{
+        padding: 0 40px;
+    }
+    .footer p {
+        padding: 0 40px;
     }
 
 }
