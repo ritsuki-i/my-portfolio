@@ -418,6 +418,9 @@ button:hover{
         margin-top: 5vw;
         font-size: 10px;
     }
+    #long {
+        font-size: 4.5vw;
+    }
     
     .row {
         display: block;
