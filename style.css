@@ -218,10 +218,6 @@ body .header{
     border-radius: 1.5em;
 }
   
-.app-card h5 {
-    font-size: 3vh;
-  }
-  
 .app-card p {
     margin-top: 20px;
     height: 60px;
@@ -235,7 +231,6 @@ body .header{
 .my-4{
     padding: 10px;
 }
-
 .long{
     box-sizing: border-box;
 }
@@ -331,7 +326,6 @@ button:hover{
     }
     
     .app-card h5 {
-        font-size: 5vw;
         margin-top: 10px;
         margin-bottom: 0px;
     }
@@ -413,7 +407,6 @@ button:hover{
     }
     
     .app-card h5 {
-        font-size: 5vw;
         margin-top: 10px;
         margin-bottom: 0px;
     }
