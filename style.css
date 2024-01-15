@@ -236,6 +236,10 @@ body .header{
     padding: 10px;
 }
 
+.long{
+    box-sizing: border-box;
+}
+
 
 /* contactpage */
 .field{
@@ -419,8 +423,11 @@ button:hover{
         margin-top: 5vw;
         font-size: 10px;
     }
-    #long {
+    .long {
         font-size: 4vw;
+    }
+    .play-btn {
+        font-size: 10px;
     }
     
     .row {
