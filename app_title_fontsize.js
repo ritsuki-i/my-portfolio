@@ -5,8 +5,7 @@
       const playbtn = document.querySelectorAll(".long");
       const appimg = document.querySelectorAll(".appimg");
       for (let i = 0; i < playbtn.length; i++) {
-        let fontSize = parseFloat(window.getComputedStyle(playbtn[i]).fontSize);
-        size = (playbtn[i].offsetWidth - appimg[i].offsetWidth) / playbtn[i].textContent.length;
+        size = (playbtn[i].offsetWidth - appimg[i].offsetWidth - 20) / playbtn[i].textContent.length;
         console.log(size);
         playbtn[i].style.fontSize = size + "px";
       }
